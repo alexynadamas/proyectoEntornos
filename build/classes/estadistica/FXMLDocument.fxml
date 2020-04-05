@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="estadistica.FXMLDocumentController">
+  <tabs>
+    <Tab text="Inicio">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="41.0" layoutY="36.0" text="Seleccione su autonomía" />
+                  <Label layoutX="41.0" layoutY="80.0" text="Introduzca su edad" />
+                  <Label layoutX="41.0" layoutY="124.0" text="Introduzca su sexo" />
+                  <Label layoutX="41.0" layoutY="168.0" text="Seleccione al partido al que " />
+                  <Label layoutX="41.0" layoutY="189.0" text="desea votar" />
+                  <Button layoutX="240.0" layoutY="270.0" mnemonicParsing="false" onAction="#enviarInformacion" text="Enviar" />
+                  <RadioButton layoutX="261.0" layoutY="124.0" mnemonicParsing="false" text="Hombre" />
+                  <RadioButton layoutX="354.0" layoutY="124.0" mnemonicParsing="false" text="Mujer" />
+                  <TextField layoutX="261.0" layoutY="80.0" />
+                  <MenuButton fx:id="menu" layoutX="261.0" layoutY="31.0" mnemonicParsing="false" text="Elige una autonomía">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Andalucía" />
+                      <MenuItem mnemonicParsing="false" text="Aragón" />
+                        <MenuItem mnemonicParsing="false" text="Castilla y León" />
+                        <MenuItem mnemonicParsing="false" text="Cataluña" />
+                        <MenuItem mnemonicParsing="false" text="Comunitat Valencia" />
+                        <MenuItem mnemonicParsing="false" text="Galicia" />
+                        <MenuItem mnemonicParsing="false" text="Comunidad de Madrid" />
+                        <MenuItem mnemonicParsing="false" text="País Vasco" />
+                    </items>
+                  </MenuButton>
+                  <MenuButton fx:id="menu2" layoutX="263.0" layoutY="165.0" mnemonicParsing="false" text="Elige un partido">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="PP" />
+                      <MenuItem mnemonicParsing="false" text="PSOE" />
+                        <MenuItem mnemonicParsing="false" text="Ciudadanos" />
+                        <MenuItem mnemonicParsing="false" text="PODEMOS" />
+                        <MenuItem mnemonicParsing="false" text="VOX" />
+                    </items>
+                  </MenuButton>
+               </children>
+            </Pane>
+         </content></Tab>
+    <Tab text="Estadística">
+         <content>
+            <Pane>
+               <children>
+                  <SplitPane dividerPositions="0.3333333333333333" prefHeight="363.0" prefWidth="600.0">
+                    <items>
+                        <Pane>
+                           <children>
+                              <Button layoutX="12.0" layoutY="41.0" mnemonicParsing="false" text="Total" />
+                              <Button layoutX="12.0" layoutY="82.0" mnemonicParsing="false" text="Datos según sexo" />
+                              <Button layoutX="12.0" layoutY="123.0" mnemonicParsing="false" text="Datos según edad" />
+                              <Button layoutX="12.0" layoutY="164.0" mnemonicParsing="false" text="Datos según autonomía" />
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="183.0" prefWidth="203.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="89.0" text="1" />
+                              <Label layoutX="14.0" layoutY="120.0" text="2" />
+                              <Label layoutX="14.0" layoutY="151.0" text="3" />
+                              <Label layoutX="14.0" layoutY="182.0" text="4" />
+                              <Label layoutX="14.0" layoutY="213.0" text="5" />
+                              <Label layoutX="45.0" layoutY="89.0" text="Label" />
+                              <Label layoutX="45.0" layoutY="120.0" text="Label" />
+                              <Label layoutX="45.0" layoutY="151.0" text="Label" />
+                              <Label layoutX="45.0" layoutY="182.0" text="Label" />
+                              <Label layoutX="45.0" layoutY="213.0" text="Label" />
+                              <Label layoutX="28.0" layoutY="29.0" text="Partido mas votado:" />
+                              <Label layoutX="173.0" layoutY="29.0" text="Label" />
+                           </children>
+                        </Pane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </Pane>
+         </content>
+    </Tab>
+  </tabs>
+</TabPane>
