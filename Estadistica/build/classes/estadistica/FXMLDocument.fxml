@@ -18,19 +18,19 @@
                   <Label layoutX="41.0" layoutY="168.0" text="Seleccione al partido al que " />
                   <Label layoutX="41.0" layoutY="189.0" text="desea votar" />
                   <Button layoutX="240.0" layoutY="270.0" mnemonicParsing="false" onAction="#enviarInformacion" text="Enviar" />
-                  <RadioButton layoutX="261.0" layoutY="124.0" mnemonicParsing="false" text="Hombre" />
-                  <RadioButton layoutX="354.0" layoutY="124.0" mnemonicParsing="false" text="Mujer" />
+                  <RadioButton fx:id="hombre" layoutX="261.0" layoutY="124.0" mnemonicParsing="false" onAction="#seleccionSexo" text="Hombre" />
+                  <RadioButton fx:id="mujer" layoutX="354.0" layoutY="124.0" mnemonicParsing="false" onAction="#seleccionSexo" text="Mujer" />
                   <TextField layoutX="261.0" layoutY="80.0" />
                   <MenuButton fx:id="menu" layoutX="261.0" layoutY="31.0" mnemonicParsing="false" text="Elige una autonomía">
                     <items>
-                      <MenuItem mnemonicParsing="false" text="Andalucía" />
-                      <MenuItem mnemonicParsing="false" text="Aragón" />
-                        <MenuItem mnemonicParsing="false" text="Castilla y León" />
-                        <MenuItem mnemonicParsing="false" text="Cataluña" />
-                        <MenuItem mnemonicParsing="false" text="Comunitat Valencia" />
-                        <MenuItem mnemonicParsing="false" text="Galicia" />
-                        <MenuItem mnemonicParsing="false" text="Comunidad de Madrid" />
-                        <MenuItem mnemonicParsing="false" text="País Vasco" />
+                      <MenuItem mnemonicParsing="false" onAction="#andalucia" text="Andalucía" />
+                      <MenuItem mnemonicParsing="false" onAction="#aragon" text="Aragón" />
+                        <MenuItem mnemonicParsing="false" onAction="#castillaYLeon" text="Castilla y León" />
+                        <MenuItem mnemonicParsing="false" onAction="#cataluña" text="Cataluña" />
+                        <MenuItem mnemonicParsing="false" onAction="#comunidadValenciana" text="Comunitat Valencia" />
+                        <MenuItem mnemonicParsing="false" onAction="#galicia" text="Galicia" />
+                        <MenuItem mnemonicParsing="false" onAction="#comunidadDeMadrid" text="Comunidad de Madrid" />
+                        <MenuItem mnemonicParsing="false" onAction="#paisVasco" text="País Vasco" />
                     </items>
                   </MenuButton>
                   <MenuButton fx:id="menu2" layoutX="263.0" layoutY="165.0" mnemonicParsing="false" text="Elige un partido">
