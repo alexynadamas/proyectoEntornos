@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Estadistica.jnlp">
   <information>
@@ -16,3 +17,25 @@
   <jfx:javafx-desc  width="800" height="600" main-class="estadistica.Estadistica"  name="Estadistica" />
   <update check="always"/>
 </jnlp>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Estadistica.jnlp">
+  <information>
+    <title>Estadistica</title>
+    <vendor>Victo</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Estadistica.jar" size="5154" download="eager" />
+    <jar href="lib\Conexion.jar" size="2850" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.18.jar" size="2330539" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Estadistica" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="estadistica.Estadistica"  name="Estadistica" />
+  <update check="always"/>
+</jnlp>
+>>>>>>> Se añade el código: almacenar los datos en la base de datos

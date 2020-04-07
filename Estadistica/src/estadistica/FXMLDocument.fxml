@@ -17,6 +17,7 @@
                   <Label layoutX="41.0" layoutY="124.0" text="Introduzca su sexo" />
                   <Label layoutX="41.0" layoutY="168.0" text="Seleccione al partido al que " />
                   <Label layoutX="41.0" layoutY="189.0" text="desea votar" />
+<<<<<<< HEAD
                   <Button layoutX="240.0" layoutY="270.0" mnemonicParsing="false" onAction="#enviarInformacion" text="Enviar" />
                   <RadioButton fx:id="hombre" layoutX="261.0" layoutY="124.0" mnemonicParsing="false" onAction="#seleccionSexo" text="Hombre" />
                   <RadioButton fx:id="mujer" layoutX="354.0" layoutY="124.0" mnemonicParsing="false" onAction="#seleccionSexo" text="Mujer" />
@@ -31,15 +32,39 @@
                         <MenuItem mnemonicParsing="false" onAction="#galicia" text="Galicia" />
                         <MenuItem mnemonicParsing="false" onAction="#comunidadDeMadrid" text="Comunidad de Madrid" />
                         <MenuItem mnemonicParsing="false" onAction="#paisVasco" text="País Vasco" />
+=======
+                  <Button fx:id="enviar" layoutX="240.0" layoutY="270.0" mnemonicParsing="false" onAction="#enviarInformacion" text="Enviar" />
+                  <RadioButton fx:id="hombre" layoutX="261.0" layoutY="124.0" mnemonicParsing="false" onAction="#seleccionSexoHombre" text="Hombre" />
+                  <RadioButton fx:id="mujer" layoutX="354.0" layoutY="124.0" mnemonicParsing="false" onAction="#seleccionSexoMujer" text="Mujer" />
+                  <TextField fx:id="edad" layoutX="261.0" layoutY="80.0" />
+                  <MenuButton fx:id="menu" layoutX="261.0" layoutY="31.0" mnemonicParsing="false" text="Elige una autonomía">
+                    <items>
+                      <MenuItem fx:id="andalucia" mnemonicParsing="false" onAction="#sacarAutonomiaAndalucia" text="Andalucía" />
+                      <MenuItem fx:id="aragon" mnemonicParsing="false" onAction="#sacarAutonomiaAragon" text="Aragón" />
+                        <MenuItem fx:id="castillaYLeon" mnemonicParsing="false" onAction="#sacarAutonomiaCastillaYLeon" text="Castilla y León" />
+                        <MenuItem fx:id="catalunya" mnemonicParsing="false" onAction="#sacarAutonomiaCatalunya" text="Cataluña" />
+                        <MenuItem fx:id="cValenciana" mnemonicParsing="false" onAction="#sacarAutonomiaCValenciana" text="Comunitat Valencia" />
+                        <MenuItem fx:id="galicia" mnemonicParsing="false" onAction="#sacarAutonomiaGalicia" text="Galicia" />
+                        <MenuItem fx:id="cMadrid" mnemonicParsing="false" onAction="#sacarAutonomiaCMadrid" text="Comunidad de Madrid" />
+                        <MenuItem fx:id="paisVasco" mnemonicParsing="false" onAction="#sacarAutonomiaPaisVasco" text="País Vasco" />
+>>>>>>> Se añade el código: almacenar los datos en la base de datos
                     </items>
                   </MenuButton>
                   <MenuButton fx:id="menu2" layoutX="263.0" layoutY="165.0" mnemonicParsing="false" text="Elige un partido">
                     <items>
+<<<<<<< HEAD
                       <MenuItem mnemonicParsing="false" text="PP" />
                       <MenuItem mnemonicParsing="false" text="PSOE" />
                         <MenuItem mnemonicParsing="false" text="Ciudadanos" />
                         <MenuItem mnemonicParsing="false" text="PODEMOS" />
                         <MenuItem mnemonicParsing="false" text="VOX" />
+=======
+                      <MenuItem fx:id="pp" mnemonicParsing="false" onAction="#sacarPartidoPP" text="PP" />
+                      <MenuItem fx:id="psoe" mnemonicParsing="false" onAction="#sacarPartidoPSOE" text="PSOE" />
+                        <MenuItem fx:id="ciudadanos" mnemonicParsing="false" onAction="#sacarPartidoCiudadanos" text="Ciudadanos" />
+                        <MenuItem fx:id="podemos" mnemonicParsing="false" onAction="#sacarPartidoPodemos" text="PODEMOS" />
+                        <MenuItem fx:id="vox" mnemonicParsing="false" onAction="#sacarPartidoVox" text="VOX" />
+>>>>>>> Se añade el código: almacenar los datos en la base de datos
                     </items>
                   </MenuButton>
                </children>
@@ -53,7 +78,11 @@
                     <items>
                         <Pane>
                            <children>
+<<<<<<< HEAD
                               <Button layoutX="12.0" layoutY="41.0" mnemonicParsing="false" text="Total" />
+=======
+                              <Button fx:id="total" layoutX="12.0" layoutY="41.0" mnemonicParsing="false" text="Total" />
+>>>>>>> Se añade el código: almacenar los datos en la base de datos
                               <Button layoutX="12.0" layoutY="82.0" mnemonicParsing="false" text="Datos según sexo" />
                               <Button layoutX="12.0" layoutY="123.0" mnemonicParsing="false" text="Datos según edad" />
                               <Button layoutX="12.0" layoutY="164.0" mnemonicParsing="false" text="Datos según autonomía" />
@@ -66,6 +95,7 @@
                               <Label layoutX="14.0" layoutY="151.0" text="3" />
                               <Label layoutX="14.0" layoutY="182.0" text="4" />
                               <Label layoutX="14.0" layoutY="213.0" text="5" />
+<<<<<<< HEAD
                               <Label layoutX="45.0" layoutY="89.0" text="Label" />
                               <Label layoutX="45.0" layoutY="120.0" text="Label" />
                               <Label layoutX="45.0" layoutY="151.0" text="Label" />
@@ -73,6 +103,15 @@
                               <Label layoutX="45.0" layoutY="213.0" text="Label" />
                               <Label layoutX="28.0" layoutY="29.0" text="Partido mas votado:" />
                               <Label layoutX="173.0" layoutY="29.0" text="Label" />
+=======
+                              <Label fx:id="primero" layoutX="45.0" layoutY="89.0" text="Label" />
+                              <Label fx:id="segundo" layoutX="45.0" layoutY="120.0" text="Label" />
+                              <Label fx:id="tercero" layoutX="45.0" layoutY="151.0" text="Label" />
+                              <Label fx:id="cuarto" layoutX="45.0" layoutY="182.0" text="Label" />
+                              <Label fx:id="quinto" layoutX="45.0" layoutY="213.0" text="Label" />
+                              <Label layoutX="28.0" layoutY="29.0" text="Partido mas votado:" />
+                              <Label fx:id="partidoMasVotado" layoutX="173.0" layoutY="29.0" text="Label" />
+>>>>>>> Se añade el código: almacenar los datos en la base de datos
                            </children>
                         </Pane>
                     </items>

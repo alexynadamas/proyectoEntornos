@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
@@ -12,3 +13,19 @@
         </group>
     </open-files>
 </project-private>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group name="Entornos de desarrollo">
+            <file>file:/C:/Users/Victo/Desktop/daw/Entornos%20de%20desarrollo/Estadistica/src/estadistica/FXMLDocument.fxml</file>
+            <file>file:/C:/Users/Victo/Desktop/daw/Entornos%20de%20desarrollo/Estadistica/src/estadistica/FXMLDocumentController.java</file>
+            <file>file:/C:/Users/Victo/Desktop/daw/Entornos%20de%20desarrollo/Estadistica/src/estadistica/Estadistica.java</file>
+        </group>
+        <group>
+            <file>file:/C:/Users/Carlos/Documents/NetBeansProjects/Estadistica/src/estadistica/Estadistica.java</file>
+        </group>
+    </open-files>
+</project-private>
+>>>>>>> Se añade el código: almacenar los datos en la base de datos
