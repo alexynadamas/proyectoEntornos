@@ -45,38 +45,28 @@
                </children>
             </Pane>
          </content></Tab>
-    <Tab text="Estadística">
+    <Tab onSelectionChanged="#pestanyaEstadistica" text="Estadística">
          <content>
             <Pane>
                <children>
-                  <SplitPane dividerPositions="0.3333333333333333" prefHeight="363.0" prefWidth="600.0">
-                    <items>
-                        <Pane>
-                           <children>
-                              <Button fx:id="total" layoutX="12.0" layoutY="41.0" mnemonicParsing="false" text="Total" />
-                              <Button layoutX="12.0" layoutY="82.0" mnemonicParsing="false" text="Datos según sexo" />
-                              <Button layoutX="12.0" layoutY="123.0" mnemonicParsing="false" text="Datos según edad" />
-                              <Button layoutX="12.0" layoutY="164.0" mnemonicParsing="false" text="Datos según autonomía" />
-                           </children>
-                        </Pane>
-                        <Pane prefHeight="183.0" prefWidth="203.0">
-                           <children>
-                              <Label layoutX="14.0" layoutY="89.0" text="1" />
-                              <Label layoutX="14.0" layoutY="120.0" text="2" />
-                              <Label layoutX="14.0" layoutY="151.0" text="3" />
-                              <Label layoutX="14.0" layoutY="182.0" text="4" />
-                              <Label layoutX="14.0" layoutY="213.0" text="5" />
-                              <Label fx:id="primero" layoutX="45.0" layoutY="89.0" text="Label" />
-                              <Label fx:id="segundo" layoutX="45.0" layoutY="120.0" text="Label" />
-                              <Label fx:id="tercero" layoutX="45.0" layoutY="151.0" text="Label" />
-                              <Label fx:id="cuarto" layoutX="45.0" layoutY="182.0" text="Label" />
-                              <Label fx:id="quinto" layoutX="45.0" layoutY="213.0" text="Label" />
-                              <Label layoutX="28.0" layoutY="29.0" text="Partido mas votado:" />
-                              <Label fx:id="partidoMasVotado" layoutX="173.0" layoutY="29.0" text="Label" />
-                           </children>
-                        </Pane>
-                    </items>
-                  </SplitPane>
+                  <Pane layoutX="47.0" prefHeight="373.0" prefWidth="553.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="89.0" text="1" />
+                        <Label layoutX="14.0" layoutY="120.0" text="2" />
+                        <Label layoutX="14.0" layoutY="151.0" text="3" />
+                        <Label layoutX="14.0" layoutY="182.0" text="4" />
+                        <Label layoutX="14.0" layoutY="213.0" text="5" />
+                        <Label fx:id="primero" layoutX="45.0" layoutY="89.0" />
+                        <Label fx:id="segundo" layoutX="45.0" layoutY="120.0" />
+                        <Label fx:id="tercero" layoutX="45.0" layoutY="151.0" />
+                        <Label fx:id="cuarto" layoutX="45.0" layoutY="182.0" />
+                        <Label fx:id="quinto" layoutX="45.0" layoutY="213.0" />
+                        <Label layoutX="28.0" layoutY="29.0" text="Partido mas votado:" />
+                        <Label fx:id="partidoMasVotado" layoutX="173.0" layoutY="29.0" />
+                        <Label fx:id="partidoMasVotado1" layoutX="28.0" layoutY="260.0" text="Votos totales: " />
+                        <Label fx:id="votosTotales" layoutX="117.0" layoutY="260.0" text="Votos totales: " />
+                     </children>
+                  </Pane>
                </children>
             </Pane>
          </content>
